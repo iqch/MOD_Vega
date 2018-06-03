@@ -86,6 +86,9 @@ using namespace std;
 #include <tetMeshGeo.h>
 #include <tetMesh.h>
 
+#include <tetMesher.h>
+#include <objMesh.h>
+
 // OPWORKS
 #define OP(op) class OP_##op : public OP_Operator \
 {  \
