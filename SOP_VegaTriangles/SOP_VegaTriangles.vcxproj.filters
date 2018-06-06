@@ -24,6 +24,15 @@
     <ClCompile Include="SOP_VegaTets.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SOP_Fade3DTets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SOP_IGLTets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SOP_CGALMiddle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">

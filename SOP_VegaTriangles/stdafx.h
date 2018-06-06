@@ -80,14 +80,11 @@ using namespace std;
 #include <UT/UT_Interrupt.h>
 #include <UT/UT_FastRandom.h>
 
-// VEGA
 
-#include <Vec3d.h>
-#include <tetMeshGeo.h>
-#include <tetMesh.h>
 
-#include <tetMesher.h>
-#include <objMesh.h>
+
+
+
 
 // OPWORKS
 #define OP(op) class OP_##op : public OP_Operator \

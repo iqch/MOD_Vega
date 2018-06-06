@@ -1,5 +1,14 @@
 #include "stdafx.h"
 
+// VEGA
+
+#include <Vec3d.h>
+#include <tetMeshGeo.h>
+#include <tetMesh.h>
+
+#include <tetMesher.h>
+#include <objMesh.h>
+
 SOP(VegaTriangles)
 
 #define PRM_FILE_NAME "file"

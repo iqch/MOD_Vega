@@ -123,15 +123,15 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;SOP_VEGATRIANGLES_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(HOUDINI)/toolkit/include;$(VEGA_FEM_ROOT)/libraries/include;$(VEGA_FEM_ROOT)/libraries/mesh;$(VEGA_FEM_ROOT)/libraries/minivector;$(VEGA_FEM_ROOT)/libraries/volumetricMesh;$(VEGA_FEM_ROOT)/libraries/mesher;$(VEGA_FEM_ROOT)/libraries/objMesh;$(VEGA_FEM_ROOT)/libraries/windingNumber</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(HOUDINI)/toolkit/include;$(VEGA_FEM_ROOT)/libraries/include;$(VEGA_FEM_ROOT)/libraries/mesh;$(VEGA_FEM_ROOT)/libraries/minivector;$(VEGA_FEM_ROOT)/libraries/volumetricMesh;$(VEGA_FEM_ROOT)/libraries/mesher;$(VEGA_FEM_ROOT)/libraries/objMesh;$(VEGA_FEM_ROOT)/libraries/windingNumber;F:\App\SDK\fade3d\include;F:\App\SDK\eigen;F:\SDK\IGL\include;F:\SDK\tetgen1.5.0;F:\App\SDK\CGAL\4.12\include;F:\App\SDK\boost\1_66_0;F:\SDK\gmp\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <OutputFile>$(USERPROFILE)\Documents\houdini16.5\dso\$(TargetName).dll</OutputFile>
-      <AdditionalLibraryDirectories>$(HOUDINI)/custom/houdini/dsolib;F:\SDK\gmp\lib;F:\Projects\freeglut-3.0.0\build\lib\Release;F:\App\SDK\CGAL\4.12\build\lib;$(VEGA_FEM_ROOT)\\libraries\lib\Release</AdditionalLibraryDirectories>
-      <AdditionalDependencies>hboost_system-mt.lib;libPRM.lib;libGA.lib;libGEO.lib;libGU.lib;libSOP.lib;libOP.lib;libUT.lib;libSYS.lib;libEXPR.lib;libmpfr-4.lib;libgmp-10.lib;mesh.lib;basicAlgorithms.lib;volumetricMesh.lib;virtualTets.lib;minivector.lib;exactArithmetic.lib;mesher.lib;objMesh.lib;windingNumber.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(HOUDINI)/custom/houdini/dsolib;F:\SDK\gmp\lib;F:\Projects\freeglut-3.0.0\build\lib\Release;F:\App\SDK\CGAL\4.12\build\lib;$(VEGA_FEM_ROOT)\\libraries\lib\Release;F:\App\SDK\fade3d\lib;F:\SDK\tetgen1.5.0</AdditionalLibraryDirectories>
+      <AdditionalDependencies>tet.lib;fade3D_x64_v140_Release.lib;hboost_system-mt.lib;libPRM.lib;libGA.lib;libGEO.lib;libGU.lib;libSOP.lib;libOP.lib;libUT.lib;libSYS.lib;libEXPR.lib;libmpfr-4.lib;libgmp-10.lib;mesh.lib;basicAlgorithms.lib;volumetricMesh.lib;virtualTets.lib;minivector.lib;exactArithmetic.lib;mesher.lib;objMesh.lib;windingNumber.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -143,19 +143,22 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;SOP_VEGATRIANGLES_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(HOUDINI)/toolkit/include;$(VEGA_FEM_ROOT)/libraries/include;$(VEGA_FEM_ROOT)/libraries/mesh;$(VEGA_FEM_ROOT)/libraries/minivector;$(VEGA_FEM_ROOT)/libraries/volumetricMesh;$(VEGA_FEM_ROOT)/libraries/mesher;$(VEGA_FEM_ROOT)/libraries/objMesh;$(VEGA_FEM_ROOT)/libraries/windingNumber</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(HOUDINI)/toolkit/include;$(VEGA_FEM_ROOT)/libraries/include;$(VEGA_FEM_ROOT)/libraries/mesh;$(VEGA_FEM_ROOT)/libraries/minivector;$(VEGA_FEM_ROOT)/libraries/volumetricMesh;$(VEGA_FEM_ROOT)/libraries/mesher;$(VEGA_FEM_ROOT)/libraries/objMesh;$(VEGA_FEM_ROOT)/libraries/windingNumber;F:\App\SDK\fade3d\include;F:\App\SDK\eigen;F:\SDK\IGL\include;F:\SDK\tetgen1.5.0;F:\App\SDK\CGAL\4.12\include;F:\App\SDK\boost\1_66_0;F:\SDK\gmp\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <OutputFile>$(USERPROFILE)\Documents\houdini16.5\dso\$(TargetName).dll</OutputFile>
-      <AdditionalLibraryDirectories>$(HOUDINI)/custom/houdini/dsolib;F:\SDK\gmp\lib;F:\Projects\freeglut-3.0.0\build\lib\Release;F:\App\SDK\CGAL\4.12\build\lib;$(VEGA_FEM_ROOT)\\libraries\lib\Release</AdditionalLibraryDirectories>
-      <AdditionalDependencies>hboost_system-mt.lib;libPRM.lib;libGA.lib;libGEO.lib;libGU.lib;libSOP.lib;libOP.lib;libUT.lib;libSYS.lib;libEXPR.lib;libmpfr-4.lib;libgmp-10.lib;mesh.lib;basicAlgorithms.lib;volumetricMesh.lib;virtualTets.lib;minivector.lib;exactArithmetic.lib;mesher.lib;objMesh.lib;windingNumber.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(HOUDINI)/custom/houdini/dsolib;F:\SDK\gmp\lib;F:\Projects\freeglut-3.0.0\build\lib\Release;F:\App\SDK\CGAL\4.12\build\lib;$(VEGA_FEM_ROOT)\\libraries\lib\Release;F:\App\SDK\fade3d\lib;F:\SDK\tetgen1.5.0</AdditionalLibraryDirectories>
+      <AdditionalDependencies>tet.lib;fade3D_x64_v140_Release.lib;hboost_system-mt.lib;libPRM.lib;libGA.lib;libGEO.lib;libGU.lib;libSOP.lib;libOP.lib;libUT.lib;libSYS.lib;libEXPR.lib;libmpfr-4.lib;libgmp-10.lib;mesh.lib;basicAlgorithms.lib;volumetricMesh.lib;virtualTets.lib;minivector.lib;exactArithmetic.lib;mesher.lib;objMesh.lib;windingNumber.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="SOP_CGALMiddle.cpp" />
+    <ClCompile Include="SOP_Fade3DTets.cpp" />
+    <ClCompile Include="SOP_IGLTets.cpp" />
     <ClCompile Include="SOP_VegaTets.cpp" />
     <ClCompile Include="SOP_VegaTriangles.cpp" />
   </ItemGroup>
